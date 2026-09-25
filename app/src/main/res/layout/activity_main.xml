@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="منظف الكاش والبيانات"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="4dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="اضغط على أي تطبيق لفتح صفحته في الإعدادات، ومن هناك اضغط زر (مسح ذاكرة التخزين المؤقت) أو (مسح البيانات)."
+        android:textSize="13sp"
+        android:textColor="#666666"
+        android:paddingBottom="12dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnClearOwnCache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="مسح كاش هذا التطبيق نفسه"
+        android:layout_marginBottom="8dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnStorageSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="فتح إعدادات التخزين العامة للجهاز"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ابحث عن تطبيق..."
+        android:inputType="text"
+        android:layout_marginBottom="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
